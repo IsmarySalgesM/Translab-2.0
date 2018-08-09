@@ -1,0 +1,113 @@
+.menu {
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  /* viewport height, usa el 100% de la altura de la pantalla*/
+  width: 90vw;
+  /* viewport width 90% del an*/
+  transition: 0.5s ease-out;
+}
+
+.menu_closed {
+  left: -90vw;
+}
+
+.menu_open {
+  left: 0;
+}
+
+.close_button {
+  /* configurando boton de cierre del navbar*/
+  font-size: xx-large;
+  color: white;
+  position: absolute;
+  right: 10px;
+}
+
+.menu_content {
+  padding: 10px;
+  margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+  /* esta medida se encuentra en bootstrap-> overview-> responsive breakpoints */
+  .menu {
+    width: 20vw;
+    /*El menú va a tomar este ancho con pantallas de 768px hacia arriba*/
+  }
+  .menu_closed {
+    left: -20vw;
+  }
+}
+
+.firstSection {
+  background-color: rgb(26, 24, 24);
+}
+
+.imagenLogo {
+  height: 35%;
+  padding: 10%;
+}
+
+h1 {
+  color: rgb(214, 150, 13);
+}
+
+.labelCorreo {
+  color: white;
+  position: absolute;
+  text-align: right;
+}
+
+.labelTarifa,
+.labelCorreo {
+  color: white;
+}
+
+.col-sm {
+  text-align: center;
+}
+
+body {
+  background-color: rgb(26, 24, 24);
+}
+
+.secondPart,.threeSection {
+display : none;
+}
+
+.btn {
+  background-color: rgb(240, 104, 13);
+}
+
+.nav-link {
+  color: rgb(214, 150, 13);
+}
+
+.btn1Spacio {
+  margin: 35%;
+  width: 40%;
+}
+
+.col-smMenu {
+  text-align: center;
+}
+
+.btn1,
+.btn2,
+.btn3,
+.btn4 {
+  width: 80%;
+  height: 100%;
+  text-align: center;
+  margin: 5%;
+  background-color: rgb(240, 104, 13);
+  border: 0;
+  font-size: 100%;
+  color: white;
+}
+
+
+#calcualarinput {
+  width: 50%;
+}
