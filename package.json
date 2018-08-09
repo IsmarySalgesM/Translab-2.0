@@ -1,0 +1,16 @@
+{
+  "name": "translabversion2",
+  "version": "0.0.1",
+  "description": "translab version 2",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "Translab",
+    "Version",
+    "2"
+  ],
+  "author": "Ismary Salges",
+  "license": "ISC"
+}
