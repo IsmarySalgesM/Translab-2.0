@@ -10,9 +10,7 @@ function starIn() {
   let password = document.getElementById("inputPassword").value;
   console.log(email);
 
-  firebase
-    .auth()
-    .createUserWithEmailAndPassword(email, password)
+  firebase.auth().createUserWithEmailAndPassword(email, password)
     .then(() => {
       console.log("Usuario creado");
     })
@@ -25,6 +23,7 @@ function starIn() {
       console.log(errorMessage);
     });
 }
+
 
 //  validateEmail.addEventListener('click', () => {
 //    let email = document.getElementById("inputEmail").value;

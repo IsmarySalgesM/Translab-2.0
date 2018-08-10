@@ -25,3 +25,24 @@ describe("Validar emails", () => {
   describe("Debería verificar que no tenga carácteres raros", () => {});
   describe("Debería verificar que tenga al menos 1 caracter antes del arroba", () => {});
 });
+
+
+describe("Validar password", () => {
+  //Describe lo que habrá dentro de cada función
+  describe("Debería verificar si existe password", () => {
+    it("Debería retornar numeros", () => {
+      //Caso de prueba
+      //assert.equal verifica que el parámetro 1 sea igual al parámetro 2
+      assert.equal(validatePassword("abc"), false);
+      assert.equal(validatePassword("abc1234"), false);
+      assert.equal(validatePassword("#%$&%&/"), false);
+    });
+    it("Debería ser 8 caracteres como maximo", () => {
+      assert.equal(validatePassword("123456789"), false);
+    });
+    it("Debería tener minimo 1 caracter", () => {
+      assert.equal(validatePassword(""), false);
+    });
+  });
+});
+
