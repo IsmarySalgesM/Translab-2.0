@@ -28,7 +28,23 @@ window.validateEmail = function(email) {
 };
 
 window.validatePassword = function(password) {
-  if (password.typeof != 'number') {
+  if (password.typeof != "number") {
+    return false;
+  }
+
+  if (password.length > 8) {
+    //Verifica que el correo SÓLO tenga 2 partes, lo que está antes del arroba y después del arroba
+    return false; //Si es distinto de 2, será false
+  }
+
+  if (password.length < 0) {
+    return false;
+  }
+  return true;
+};
+
+window.validarFunctiones = function(loggin) {
+  if (  true ) {
     return false;
   }
 

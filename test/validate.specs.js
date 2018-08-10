@@ -26,12 +26,10 @@ describe("Validar emails", () => {
   describe("Debería verificar que tenga al menos 1 caracter antes del arroba", () => {});
 });
 
-
 describe("Validar password", () => {
   //Describe lo que habrá dentro de cada función
   describe("Debería verificar si existe password", () => {
     it("Debería retornar numeros", () => {
-      //Caso de prueba
       //assert.equal verifica que el parámetro 1 sea igual al parámetro 2
       assert.equal(validatePassword("abc"), false);
       assert.equal(validatePassword("abc1234"), false);
@@ -46,3 +44,13 @@ describe("Validar password", () => {
   });
 });
 
+describe("validar Functiones", () => {
+  //Describe lo que habrá dentro de cada función
+  describe("Debería verificar si existe fuction", () => {
+    it("Debería si es una function de botones", () => {
+      //Caso de prueba
+      //assert.equal verifica que el parámetro 1 sea igual al parámetro 2
+      assert.equal(validarFunctiones("function sigIn ()"), true);
+    });
+  })
+})
