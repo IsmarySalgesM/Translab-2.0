@@ -13,7 +13,7 @@ describe("Validar emails", () => {
     });
     it("Debería el correo tener un arroba antes del dominio", () => {
       assert.equal(validateEmail(".com@asdf"), false);
-      assert.equal(validateEmail("fabian@laboratoria.la"), true);
+      assert.equal(validateEmail("ismarysalges@gmail.com"), true);
     });
   });
   describe("Debería verificar si tiene un dominio", () => {
