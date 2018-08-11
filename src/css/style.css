@@ -59,11 +59,11 @@ h1 {
   text-align: right;
 }
 
-.colorCorreo{
-  color : white;
+.colorCorreo {
+  color: white;
 }
 
-.labelTarifa,{
+.labelTarifa {
   color: white;
 }
 
@@ -75,8 +75,8 @@ body {
   background-color: rgb(26, 24, 24);
 }
 
-.secondPart,.threeSection {
-display : none;
+.secondPart,.threeSection,.fourSection {
+  display: none;
 }
 
 .btn {
@@ -87,10 +87,6 @@ display : none;
   color: rgb(214, 150, 13);
 }
 
-.btn1Spacio {
-  margin: 35%;
-  width: 40%;
-}
 
 .col-smMenu {
   text-align: center;
@@ -110,7 +106,15 @@ display : none;
   color: white;
 }
 
+#photoUser {
+  background-color: rgb(221, 142, 14);
+  padding: 45%;
+  text-align: center;
+  background: url("https://www.google.cl/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwjQ-b7_8-PcAhWKjpAKHdpaCi0QjRx6BAgBEAU&url=https%3A%2F%2Fwww.minutouno.com%2Fnotas%2F345915-facebook-debera-pagarle-1-millon-un-usuario-rosarino&psig=AOvVaw0h-AwOLAXSX8rDiX3c_cPG&ust=1534038415130077")
+}
 
-#calcualarinput {
-  width: 50%;
+#cardUser {
+  text-align: center;
+  background-color: rgb(74, 74, 77);
+  
 }

@@ -15,3 +15,4 @@ function closeMenu() {
   sideMenu.classList.add("menu_closed");
   sideMenu.classList.remove("menu_open");
 }
+

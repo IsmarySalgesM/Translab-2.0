@@ -9,6 +9,8 @@
 
   firebase.auth().onAuthStateChanged(user => {
     if (user) {
+      let emailUser = user.email;
+      printUser.innerHTML = emailUser;
       //Si estamos logueados
       firstView.style.display = "none";
       secondView.style.display = "block";
