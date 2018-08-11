@@ -50,7 +50,7 @@ describe("validar Functiones", () => {
     it("Debería si es una function de botones", () => {
       //Caso de prueba
       //assert.equal verifica que el parámetro 1 sea igual al parámetro 2
-      assert.equal(validarFunctiones("function sigIn ()"), true);
+      assert.isFunction(validarFunctiones);
     });
   })
 })
