@@ -150,7 +150,7 @@
             <div class="card">
               <div class="card-header" id="headingOne">
                 <h5 class="mb-0">
-                  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                     Cuidados de tarjeta bip!
                   </button>
                 </h5>
@@ -166,8 +166,7 @@
             <div class="card">
               <div class="card-header" id="headingTwo">
                 <h5 class="mb-0">
-                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
-                    aria-controls="collapseTwo">
+                  <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                     Centro bip!
                   </button>
                 </h5>
@@ -183,14 +182,14 @@
             <div class="card">
               <div class="card-header" id="headingThree">
                 <h5 class="mb-0">
-                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
-                    aria-controls="collapseThree">
+                  <button class="btn collapsed" type="button " data-toggle="collapse " data-target="#collapseThree
+                    " aria-expanded="false " aria-controls="collapseThree ">
                     Carga online y convenios
                   </button>
                 </h5>
               </div>
-              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                <div class="card-body">
+              <div id="collapseThree " class="collapse " aria-labelledby="headingThree " data-parent="#accordionExample ">
+                <div class="card-body ">
                   ¿Puedo deshacer una compra remota? No, una vez realizada la carga remota no se puede hacer devolución de la compra.
                 </div>
               </div>
@@ -198,69 +197,69 @@
           </div>
         </div>
         <!--  -->
-        <div class="col-sm">
+        <div class="col-sm ">
         </div>
   </section>
 
   <!-- Seccion Calcular -->
-  <section class="fiveSection" id="">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-sm">
+  <section class="fiveSection " id=" ">
+    <div class="container-fluid ">
+      <div class="row ">
+        <div class="col-sm ">
         </div>
-        <div class="col-sm">
-          <label class="labelCorreo"> Numero de Tarjeta</label>
-          <input type="text" class="form-control" id="tarjenum">
+        <div class="col-sm ">
+          <label class="labelCorreo "> Numero de Tarjeta</label>
+          <input type="text " class="form-control " id="tarjenum ">
           <div>
-            <label class="labelTarifa">Tarifa</label>
-            <div class="input-group mb-3">
-              <select class="custom-select">
-                <option selected id="inputSelect">Choose...</option>
-                <option value="1"></option>
+            <label class="labelTarifa ">Tarifa</label>
+            <div class="input-group mb-3 ">
+              <select class="custom-select ">
+                <option selected id="inputSelect ">Choose...</option>
+                <option value="1 "></option>
               </select>
             </div>
-            <label class="labelTarjeta">Tarjeta</label>
-            <div class="input-group mb-3">
-              <select class="custom-selid=" id="inputGroupSelect02">
+            <label class="labelTarjeta ">Tarjeta</label>
+            <div class="input-group mb-3 ">
+              <select class="custom-selid=" id=" inputGroupSelect02 ">
                 <option selected>Choose...</option>
-                <option value="1" id=""></option>
+                <option value="1 " id=" "></option>
               </select>
             </div>
           </div>
           <button> Calcular</button>
         </div>
-        <div class="col-sm">
+        <div class="col-sm ">
         </div>
       </div>
     </div>
   </section>
 
   <!-- firebase -->
-  <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js "></script>
   <script>
     // Initialize Firebase
     var config = {
-      apiKey: "AIzaSyAGj88X5R4UA0s_Bp61aWTiqRYLYh5Kqbk",
-      authDomain: "translab2-9bc94.firebaseapp.com",
-      databaseURL: "https://translab2-9bc94.firebaseio.com",
-      projectId: "translab2-9bc94",
-      storageBucket: "translab2-9bc94.appspot.com",
-      messagingSenderId: "625914286259"
+      apiKey: "AIzaSyAGj88X5R4UA0s_Bp61aWTiqRYLYh5Kqbk ",
+      authDomain: "translab2-9bc94.firebaseapp.com ",
+      databaseURL: "https://translab2-9bc94.firebaseio.com ",
+      projectId: "translab2-9bc94 ",
+      storageBucket: "translab2-9bc94.appspot.com ",
+      messagingSenderId: "625914286259 "
     };
     firebase.initializeApp(config);
   </script>
 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
-    crossorigin="anonymous"></script>
-  <script src="./src/js/openmenu.js"></script>
-  <script src="./src/js/main.js"></script>
-  <script src="./src/js/app.js"></script>
-  <script src="./src/js/validate.js"></script>
-  <script src="./src/js/view.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo "
+    crossorigin="anonymous "></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js " integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49 "
+    crossorigin="anonymous "></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js " integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T "
+    crossorigin="anonymous "></script>
+  <script src="./src/js/openmenu.js "></script>
+  <script src="./src/js/main.js "></script>
+  <script src="./src/js/app.js "></script>
+  <script src="./src/js/validate.js "></script>
+  <script src="./src/js/view.js "></script>
 </body>
 
 </html>
