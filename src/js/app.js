@@ -43,9 +43,17 @@ function starIn() {
 }
 
 function saveContactTarj(infoTarjeta) {
-firebase.database().ref("tarjeta").push(infoTarjeta) //
-.then(function() {
-});
+  firebase
+    .database()
+    .ref("tarjeta")
+    .push(infoTarjeta) //
+    .then(() => {
+      alert("Se ha agregado su tarjeta bip con exito");
+    })
+    .catch(function(error) {
+      // Handle Errors here.
+      var errorCode = error.code;
+      var errorMessage = error.message;
+      // ...
+    });
 }
-
-

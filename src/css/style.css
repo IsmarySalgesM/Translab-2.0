@@ -75,7 +75,10 @@ body {
   background-color: rgb(26, 24, 24);
 }
 
-.secondPart,.threeSection,.fourSection {
+.secondPart,
+.threeSection,
+.fourSection,
+.fiveSection {
   display: none;
 }
 
