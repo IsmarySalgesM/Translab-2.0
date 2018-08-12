@@ -1,14 +1,15 @@
 // AQUI VA EL DOM
 let inNumCard = document.getElementById("textNum");
 btnNum.addEventListener("click", () => {
-  inNumCard.value;
+inNumCard.value;
 
   //inNumCard = " ";
   let infoTarjeta = {
     cardBip: inNumCard.value
   };
   saveContactTarj(infoTarjeta);
-
+  alert('Se ha agregado su tarjeta bip con exito')
+  inNumCard.value = "";
   let createTarjNum = document.getElementById("createTarj");
   let cardNum = document.createElement("h1");
   createTarjNum.appendChild(cardNum);
