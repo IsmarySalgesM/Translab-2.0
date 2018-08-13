@@ -77,8 +77,7 @@ body {
 
 .secondPart,
 .threeSection,
-.fourSection,
-.fiveSection {
+.fourSection,.sixSection {
   display: none;
 }
 

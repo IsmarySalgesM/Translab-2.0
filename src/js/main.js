@@ -1,12 +1,14 @@
 // AQUI VA EL DOM
 let inNumCard = document.getElementById("textNum");
+let inSelect = document.getElementById("selectVerSaldo");
+
 btnNum.addEventListener("click", () => {
   inNumCard.value;
- // if (typeof inNumCard == "string") {
+  // if (typeof inNumCard == "string") {
   //  alert("Por favor, introducir solo numeros");
   //} else {
   //  return;
- // }
+  // }
 
   let infoTarjeta = {
     cardBip: inNumCard.value
@@ -18,4 +20,5 @@ btnNum.addEventListener("click", () => {
   let cardNum = document.createElement("h1");
   createTarjNum.appendChild(cardNum);
   cardNum.innerHTML = Object.values(infoTarjeta);
+  
 });

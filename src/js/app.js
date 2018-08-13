@@ -21,6 +21,7 @@ firebase.auth().onAuthStateChanged(user => {
   }
 });
 
+// Hace loggin el usuario
 function starIn() {
   let email = document.getElementById("inputEmail").value;
   let password = document.getElementById("inputPassword").value;
@@ -41,7 +42,7 @@ function starIn() {
       console.log(errorMessage);
     });
 }
-
+// Se guarda la informacion de la tarjeta
 function saveContactTarj(infoTarjeta) {
   firebase
     .database()
@@ -54,6 +55,16 @@ function saveContactTarj(infoTarjeta) {
       // Handle Errors here.
       var errorCode = error.code;
       var errorMessage = error.message;
-      // ...
+      //
     });
 }
+
+// Aqui se imprime en el select
+firebase.database().ref("/tarjeta")
+  .limitToLast(5)
+  .on("child_added", card => {
+    selectVerSaldo.innerHTML += `
+    <select>
+    <option>${card.val().cardBip}</option>
+    </select>`;
+  });

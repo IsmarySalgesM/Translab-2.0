@@ -55,211 +55,240 @@
         <span aria-hidden="true">&times;</span>
       </div>
       <div class="menu_content">
-        <a class="nav-link active text-secondary" href="#">
-          <i class="far fa-user"> </i> Perfil</a>
-        <a class="nav-link text-secondary" href="#">
-          <i class="far fa-envelope"> </i> Mensajes</a>
-        <a class="nav-link text-secondary" href="#">
-          <i class="fas fa-users"></i> Contactos</a>
-        <a class="nav-link text-secondary" href="#">
-          <i class="fas fa-utensils"></i> Alimentación</a>
-        <a class="nav-link text-secondary" href="#">
-          <i class="fas fa-graduation-cap"></i> Educación</a>
-        <a class="nav-link text-secondary" href="#">
-          <i class="fas fa-briefcase-medical"></i> Salud</a>
-      </div>
+        <a class="nav-link active text-secondary" id="iconPerfil" href="#">
+          <i class="far fa-user"></i> Perfil</a>
+
+        <a class="nav-link text-secondary" id="iconSaldo" href="#">
+          <i class="far fa-envelope"> </i> Ver Saldo</a>
+
+        <a class="nav-link text-secondary" id="iconCalcular" href="#">
+          <i class="fas fa-users"></i> Calcular Tarifa</a>
+
+        <a class="nav-link text-secondary" id="iconPreguntas" href="#">
+          <i class="fas fa-utensils"></i> Preguntas Frecuentes</a>
+
+        <a class="nav-link text-secondary" id="iconSalir" href="#">
+          <i class="fas fa-graduation-cap"></i> Salir</a>
     </nav>
-  </div>
-  <section class="secondPart" id="secondView">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-sm">
-        </div>
-        <div class="col-sm">
-          <!-- Botones -->
-          <div>
-            <button type="button" class="btn1  text-center">Ver Saldo</button>
-          </div>
-          <div>
-            <button type="button" id="btnCalcular" class="btn2 text-center">Calcular Tarifa</button>
-          </div>
-          <div>
-            <button type="button" id="btnPerfil" class="btn3  text-center">Perfil</button>
-          </div>
-          <div>
-            <button type="button" id="btnPregunta" class="btn4  text-center">Preguntas Frecuentes</button>
-          </div>
-        </div>
-        <!-- Finish Botones -->
-        <div class="col-sm">
-        </div>
-      </div>
     </div>
-  </section>
-  <!-- Seccion Perfil -->
-  <section class="threeSection" id="threeView">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-sm">
-        </div>
-        <div class="col-sm">
-          <div id="photoUser">
-
+    <section class="secondPart" id="secondView">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm">
           </div>
-
-          <div id="cardUser">
-            <div class="card">
-              <div class="card-body" id="printUser">
-              </div>
+          <div class="col-sm">
+            <!-- Botones -->
+            <div>
+              <button type="button" id="btnSaldo" class="btn1  text-center">Ver Saldo</button>
+            </div>
+            <div>
+              <button type="button" id="btnCalcular" class="btn2 text-center">Calcular Tarifa</button>
+            </div>
+            <div>
+              <button type="button" id="btnPerfil" class="btn3  text-center">Perfil</button>
+            </div>
+            <div>
+              <button type="button" id="btnPregunta" class="btn4  text-center">Preguntas Frecuentes</button>
             </div>
           </div>
-          <!-- Numero de tarjeta -->
-          <div class="input-group input-group-sm mb-3">
-            <div class="input-group-prepend">
-              <span class="input-group-text" id="inputGroup-sizing-sm">Número de Tarjeta</span>
-            </div>
-            <input type="text" class="form-control" id="textNum" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+          <!-- Finish Botones -->
+          <div class="col-sm">
           </div>
-          <button type="button" class="btn btn-warning" id="btnNum">Agregar Tarjeta</button>
-          <!--  -->
-          <!-- Agregar tarjetas -->
-          <div id="createTarj">
-
-          </div>
-          <!--  -->
-        </div>
-        <div class="col-sm">
         </div>
       </div>
-    </div>
-  </section>
-  <!-- Seccion Preguntas -->
-  <section class="fourSection" id="fourView">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-sm">
-        </div>
-        <div class="col-sm">
-          <!-- Collapse preguntas -->
-          <div>
-            <h1>
-              PREGUNTAS FRECUENTES
-            </h1>
+    </section>
+    <!-- Seccion Perfil -->
+    <section class="threeSection" id="threeView">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm">
           </div>
-          <div class="accordion" id="accordionExample">
-            <div class="card">
-              <div class="card-header" id="headingOne">
-                <h5 class="mb-0">
-                  <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    Cuidados de tarjeta bip!
-                  </button>
-                </h5>
-              </div>
-              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-                <div class="card-body">
-                  ¿Qué cuidados requiere la tarjeta para mantenerla en buenas condiciones? Los cuidados de tu tarjeta son simples. Sólo debes
-                  evitar exponerla al calor, doblarla o quebrarla. Te recomendamos tenerla en un tarjetero plástico para
-                  aumentar su vida útil.
+          <div class="col-sm">
+            <div id="photoUser">
+
+            </div>
+
+            <div id="cardUser">
+              <div class="card">
+                <div class="card-body" id="printUser">
                 </div>
               </div>
             </div>
-            <div class="card">
-              <div class="card-header" id="headingTwo">
-                <h5 class="mb-0">
-                  <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    Centro bip!
-                  </button>
-                </h5>
+            <!-- Numero de tarjeta -->
+            <div class="input-group input-group-sm mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-sm">Número de Tarjeta</span>
               </div>
-              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                <div class="card-body">
-                  ¿Qué es un Centro bip!? Son oficinas donde puedes comprar, cargar y consultar el saldo de tu bip!, además de activar cargas
-                  remotas. La mayoría de los Centro bip! son locales compartidos con servicios de atención de Servipag y
-                  ServiEstado.
+              <input type="text" class="form-control" id="textNum" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+            </div>
+            <button type="button" class="btn btn-warning" id="btnNum">Agregar Tarjeta</button>
+            <!--  -->
+            <!-- Agregar tarjetas -->
+            <div id="createTarj">
+
+            </div>
+            <!--  -->
+          </div>
+          <div class="col-sm">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Seccion Preguntas -->
+    <section class="fourSection" id="fourView">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm">
+          </div>
+          <div class="col-sm">
+            <!-- Collapse preguntas -->
+            <div>
+              <h1>
+                PREGUNTAS FRECUENTES
+              </h1>
+            </div>
+            <div class="accordion" id="accordionExample">
+              <div class="card">
+                <div class="card-header" id="headingOne">
+                  <h5 class="mb-0">
+                    <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Cuidados de tarjeta bip!
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                  <div class="card-body">
+                    ¿Qué cuidados requiere la tarjeta para mantenerla en buenas condiciones? Los cuidados de tu tarjeta son simples. Sólo debes
+                    evitar exponerla al calor, doblarla o quebrarla. Te recomendamos tenerla en un tarjetero plástico para
+                    aumentar su vida útil.
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="card">
-              <div class="card-header" id="headingThree">
-                <h5 class="mb-0">
-                  <button class="btn collapsed" type="button " data-toggle="collapse " data-target="#collapseThree
+              <div class="card">
+                <div class="card-header" id="headingTwo">
+                  <h5 class="mb-0">
+                    <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Centro bip!
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                  <div class="card-body">
+                    ¿Qué es un Centro bip!? Son oficinas donde puedes comprar, cargar y consultar el saldo de tu bip!, además de activar cargas
+                    remotas. La mayoría de los Centro bip! son locales compartidos con servicios de atención de Servipag
+                    y ServiEstado.
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingThree">
+                  <h5 class="mb-0">
+                    <button class="btn collapsed" type="button " data-toggle="collapse " data-target="#collapseThree
                     " aria-expanded="false " aria-controls="collapseThree ">
-                    Carga online y convenios
-                  </button>
-                </h5>
-              </div>
-              <div id="collapseThree " class="collapse " aria-labelledby="headingThree " data-parent="#accordionExample ">
-                <div class="card-body ">
-                  ¿Puedo deshacer una compra remota? No, una vez realizada la carga remota no se puede hacer devolución de la compra.
+                      Carga online y convenios
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseThree " class="collapse " aria-labelledby="headingThree " data-parent="#accordionExample ">
+                  <div class="card-body ">
+                    ¿Puedo deshacer una compra remota? No, una vez realizada la carga remota no se puede hacer devolución de la compra.
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <!--  -->
-        <div class="col-sm ">
-        </div>
-  </section>
-
-  <!-- Seccion Calcular -->
-  <section class="fiveSection " id=" ">
-    <div class="container-fluid ">
-      <div class="row ">
-        <div class="col-sm ">
-        </div>
-        <div class="col-sm ">
-          <label class="labelCorreo "> Numero de Tarjeta</label>
-          <input type="text " class="form-control " id="tarjenum ">
-          <div>
-            <label class="labelTarifa ">Tarifa</label>
-            <div class="input-group mb-3 ">
-              <select class="custom-select ">
-                <option selected id="inputSelect ">Choose...</option>
-                <option value="1 "></option>
-              </select>
+          <!-- Termino collapse -->
+          <div class="col-sm ">
+          </div>
+    </section>
+    <!-- Seccion Ver Saldo -->
+    <section class="fiveSection " id="fiveView">
+      <div class="container-fluid ">
+        <div class="row">
+          <div class="col-sm ">
+          </div>
+          <div class="col-sm ">
+            <div class="input-group input-group-sm mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-sm">Small</span>
+              </div>
+              <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
             </div>
-            <label class="labelTarjeta ">Tarjeta</label>
-            <div class="input-group mb-3 ">
-              <select class="custom-selid=" id=" inputGroupSelect02 ">
-                <option selected>Choose...</option>
-                <option value="1 " id=" "></option>
-              </select>
+            <div>
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <label class="input-group-text" for="inputGroupSelect01">Options</label>
+                </div>
+                <select class="custom-select" id="selectVerSaldo">
+                  <option selected>Tarjetas</option>
+                </select>
+              </div>
             </div>
           </div>
-          <button> Calcular</button>
-        </div>
-        <div class="col-sm ">
+          <div class="col-sm ">
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+    <!-- Seccion Calcular -->
+    <section class="sixSection " id=" ">
+      <div class="container-fluid ">
+        <div class="row ">
+          <div class="col-sm ">
+          </div>
+          <div class="col-sm ">
+            <label class="labelCorreo "> Numero de Tarjeta</label>
+            <input type="text " class="form-control " id="tarjenum ">
+            <div>
+              <label class="labelTarifa ">Tarifa</label>
+              <div class="input-group mb-3 ">
+                <select class="custom-select ">
+                  <option selected id="inputSelect ">Choose...</option>
+                  <option value="1 "></option>
+                </select>
+              </div>
+              <label class="labelTarjeta ">Tarjeta</label>
+              <div class="input-group mb-3 ">
+                <select class="custom-selid=" id=" inputGroupSelect02 ">
+                  <option selected>Choose...</option>
+                  <option value="1 " id=" "></option>
+                </select>
+              </div>
+            </div>
+            <button> Calcular</button>
+          </div>
+          <div class="col-sm ">
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <!-- firebase -->
-  <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js "></script>
-  <script>
-    // Initialize Firebase
-    var config = {
-      apiKey: "AIzaSyAGj88X5R4UA0s_Bp61aWTiqRYLYh5Kqbk ",
-      authDomain: "translab2-9bc94.firebaseapp.com ",
-      databaseURL: "https://translab2-9bc94.firebaseio.com ",
-      projectId: "translab2-9bc94 ",
-      storageBucket: "translab2-9bc94.appspot.com ",
-      messagingSenderId: "625914286259 "
-    };
-    firebase.initializeApp(config);
-  </script>
+    <!-- firebase -->
+    <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyAGj88X5R4UA0s_Bp61aWTiqRYLYh5Kqbk",
+        authDomain: "translab2-9bc94.firebaseapp.com",
+        databaseURL: "https://translab2-9bc94.firebaseio.com",
+        projectId: "translab2-9bc94",
+        storageBucket: "translab2-9bc94.appspot.com",
+        messagingSenderId: "625914286259"
+      };
+      firebase.initializeApp(config);
+    </script>
 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo "
-    crossorigin="anonymous "></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js " integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49 "
-    crossorigin="anonymous "></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js " integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T "
-    crossorigin="anonymous "></script>
-  <script src="./src/js/openmenu.js "></script>
-  <script src="./src/js/main.js "></script>
-  <script src="./src/js/app.js "></script>
-  <script src="./src/js/validate.js "></script>
-  <script src="./src/js/view.js "></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js " integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js " integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+      crossorigin="anonymous "></script>
+    <script src="./src/js/openmenu.js"></script>
+    <script src="./src/js/main.js"></script>
+    <script src="./src/js/app.js"></script>
+    <script src="./src/js/validate.js"></script>
+    <script src="./src/js/view.js"></script>
 </body>
 
 </html>
