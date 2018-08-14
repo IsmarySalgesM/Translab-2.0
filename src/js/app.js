@@ -58,9 +58,10 @@ function saveContactTarj(infoTarjeta) {
       //
     });
 }
-
 // Aqui se imprime en el select
-firebase.database().ref("/tarjeta")
+firebase
+  .database()
+  .ref("/tarjeta")
   .limitToLast(5)
   .on("child_added", card => {
     selectVerSaldo.innerHTML += `
@@ -68,3 +69,26 @@ firebase.database().ref("/tarjeta")
     <option>${card.val().cardBip}</option>
     </select>`;
   });
+
+//Api Bip
+function calcularTarifa(tarifa) {
+  fetch(`http://bip-servicio.herokuapp.com/api/v1/solicitudes.json?bip=${tarifa}`)
+    .then(response => response.json())
+    .then(data => {
+      console.log(data);
+      renderInfo(data);
+    })
+  
+    .catch(error => {
+      console.error("tarjeta no existe");
+      console.error("ERROR > " + error.stack);
+    });
+
+  const renderInfo = data => {
+  containerTitle.innerHTML = data.Title;
+  containerYear.innerHTML = data.Year;
+  containerRuntime.innerHTML = data.Runtime;
+  containerImage.innerHTML = `<img src="${data.Poster}">`;
+}
+
+}

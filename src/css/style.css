@@ -72,41 +72,33 @@ h1 {
 }
 
 body {
-  background-color: rgb(26, 24, 24);
+  background-color: rgb(187, 183, 183);
 }
 
-.secondPart,
-.threeSection,
-.fourSection,.sixSection {
+.firstSection{
+  background-color: black;
+}
+.secondPart,.threeSection,.fourSection,.fiveSection,.sixSection {
   display: none;
 }
-
-.btn {
-  background-color: rgb(240, 104, 13);
-}
-
-.nav-link {
-  color: rgb(214, 150, 13);
-}
-
-
 .col-smMenu {
   text-align: center;
 }
 
-.btn1,
-.btn2,
-.btn3,
-.btn4 {
+.btn1,.btn2,.btn3,.btn4 {
   width: 80%;
   height: 100%;
   text-align: center;
   margin: 5%;
-  background-color: rgb(240, 104, 13);
+  background-color: rgb(202, 150, 7);
   border: 0;
   font-size: 100%;
   color: white;
+  padding: 2%;
+  font-weight: bold;
 }
+
+
 
 #photoUser {
   background-color: rgb(221, 142, 14);

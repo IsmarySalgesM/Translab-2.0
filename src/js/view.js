@@ -1,30 +1,53 @@
-window.onload = () => {
-  let btnFour = document.getElementById("btnPerfil");
-  let btnAnswer = document.getElementById("btnPregunta");
-  let btnSaldo = document.getElementById("btnSaldo");
-  let iSaldo = document.getElementById("iconSaldo");
+function showBalance() {
+  showPrice();
+  document.getElementById("firstView").style.display = "none";
+  document.getElementById("secondView").style.display = "none";
+  document.getElementById("threeView").style.display = "none";
+  document.getElementById("fourView").style.display = "none";
+  document.getElementById("fiveView").style.display = "none";
+  document.getElementById("sixView").style.display = "block";
 
-  btnFour.addEventListener("click", () => {
-    secondView.style.display = "none";
-    threeView.style.display = "block";
-  });
+  closeMenu();
+}
 
-  btnAnswer.addEventListener("click", () => {
-    secondView.style.display = "none";
-    fourView.style.display = "block";
-  });
+function showPrice() {
+  document.getElementById("firstView").style.display = "none";
+  document.getElementById("secondView").style.display = "none";
+  document.getElementById("threeView").style.display = "none";
+  document.getElementById("fourView").style.display = "none";
+  document.getElementById("sixView").style.display = "none";
+  document.getElementById("fiveView").style.display = "block";
 
- 
-  btnSaldo.addEventListener("click", () => {
-    secondView.style.display = "none";
-    fiveView.style.display = "block";
-  });
+  closeMenu();
+}
 
+function showProfile() {
+  document.getElementById("firstView").style.display = "none";
+  document.getElementById("secondView").style.display = "none";
+  document.getElementById("fourView").style.display = "none";
+  document.getElementById("fiveView").style.display = "none";
+  document.getElementById("sixView").style.display = "none";
+  document.getElementById("threeView").style.display = "block";
+  closeMenu();
+}
 
- function iconSaldo() {
-    threeView.style.display = "none";
-    fiveView.style.display = "block";
-  }; 
-  
-  
-};
+function showQuestions() {
+  document.getElementById("firstView").style.display = "none";
+  document.getElementById("secondView").style.display = "none";
+  document.getElementById("threeView").style.display = "none";
+  document.getElementById("fiveView").style.display = "none";
+  document.getElementById("sixView").style.display = "none";
+  document.getElementById("fourView").style.display = "block";
+  closeMenu();
+}
+
+function showHome() {
+  document.getElementById("firstView").style.display = "none";
+  document.getElementById("threeView").style.display = "none";
+  document.getElementById("fourView").style.display = "none";
+  document.getElementById("fiveView").style.display = "none";
+  document.getElementById("sixView").style.display = "none";
+  document.getElementById("secondView").style.display = "block";
+
+  closeMenu();
+}
