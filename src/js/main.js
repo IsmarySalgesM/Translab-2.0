@@ -2,8 +2,8 @@
 let inNumCard = document.getElementById("textNum");
 let inSelect = document.getElementById("selectVerSaldo");
 let btnTarifa = document.getElementById("saldoCalcular");
-let calcularSelect = inSelect.value;
-
+let containerSaldo = document.getElementById("containerBip");
+let restSaldo = document.getElementById("inputDescont");
 
 btnNum.addEventListener("click", () => {
   // if (typeof inNumCard == "string") {
@@ -23,7 +23,5 @@ btnNum.addEventListener("click", () => {
   cardNum.innerHTML = Object.values(infoTarjeta);
 });
 
-btnTarifa.addEventListener("click", () => {
-  let secondInputCard = document.getElementById("secondInput").value;
-  calcularTarifa(secondInputCard);
-});
+
+

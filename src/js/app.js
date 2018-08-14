@@ -68,27 +68,32 @@ firebase
     <select>
     <option>${card.val().cardBip}</option>
     </select>`;
+    inputDescont.innerHTML += `
+    <select>
+    <option>${card.val().cardBip}</option>
+    </select>`;
   });
 
 //Api Bip
-function calcularTarifa(tarifa) {
-  fetch(`http://bip-servicio.herokuapp.com/api/v1/solicitudes.json?bip=${tarifa}`)
+btnTarifa.addEventListener("click", () => {
+  let secondInputCard = document.getElementById("secondInput").value;
+  let inSelect = document.getElementById("selectVerSaldo").value;
+  fetch(
+    `http://bip-servicio.herokuapp.com/api/v1/solicitudes.json?bip=${secondInputCard || inSelect }`
+  )
     .then(response => response.json())
     .then(data => {
       console.log(data);
       renderInfo(data);
     })
-  
+
     .catch(error => {
       console.error("tarjeta no existe");
       console.error("ERROR > " + error.stack);
     });
-
   const renderInfo = data => {
-  containerTitle.innerHTML = data.Title;
-  containerYear.innerHTML = data.Year;
-  containerRuntime.innerHTML = data.Runtime;
-  containerImage.innerHTML = `<img src="${data.Poster}">`;
-}
+  containerSaldo.innerHTML = `<h1> Saldo Total</h1>` + data.saldoTarjeta;
+};
+  })
 
-}
+

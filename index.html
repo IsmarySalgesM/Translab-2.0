@@ -73,6 +73,7 @@
         <div class="col-sm">
           <!-- Botones -->
           <div>
+            <!--icono aca-->
             <button type="button" onclick="showBalance()" class="btn1  text-center">VER SALDO</button>
           </div>
           <div>
@@ -219,7 +220,11 @@
             </div>
           </div>
           <button type="button" id="saldoCalcular" class="btn btn-warning">Ver Saldo</button>
+          <div id="containerBip">
+
+          </div>
         </div>
+
         <div class="col-sm ">
         </div>
       </div>
@@ -232,25 +237,26 @@
         <div class="col-sm ">
         </div>
         <div class="col-sm ">
-          <label class="labelCorreo "> Numero de Tarjeta</label>
-          <input type="text " class="form-control " id="tarjenum ">
           <div>
-            <label class="labelTarifa ">Tarifa</label>
+            <label class="labelTarifa ">Tarjetas</label>
             <div class="input-group mb-3 ">
-              <select class="custom-select ">
-                <option selected id="inputSelect ">Choose...</option>
-                <option value="1 "></option>
-              </select>
-            </div>
-            <label class="labelTarjeta ">Tarjeta</label>
-            <div class="input-group mb-3 ">
-              <select class="custom-selid=" id=" inputGroupSelect02 ">
-                <option selected>Choose...</option>
-                <option value="1 " id=" "></option>
+              <select class="custom-select " id="inputDescont">
+                <option selected >Tarifa</option>
               </select>
             </div>
           </div>
-          <button> Calcular</button>
+          <div>
+            <label class="labelTarjeta ">Tarifa</label>
+            <div class="input-group mb-3 ">
+              <select class="custom-select ">
+                <option selected id="tarifaHorario">Valor de Tarifa</option>
+                <option value="760">Horario Alto</option>
+                <option value="680">Horario Medio</option>
+                <option value="630">Horario Bajo</option>
+              </select>
+            </div>
+          </div>
+          <button type="button" id="calConTarifa" class="btn btn-warning"> Calcular</button>
         </div>
         <div class="col-sm ">
         </div>

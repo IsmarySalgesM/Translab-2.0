@@ -104,11 +104,13 @@ body {
   background-color: rgb(221, 142, 14);
   padding: 45%;
   text-align: center;
-  background: url("https://www.google.cl/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwjQ-b7_8-PcAhWKjpAKHdpaCi0QjRx6BAgBEAU&url=https%3A%2F%2Fwww.minutouno.com%2Fnotas%2F345915-facebook-debera-pagarle-1-millon-un-usuario-rosarino&psig=AOvVaw0h-AwOLAXSX8rDiX3c_cPG&ust=1534038415130077")
 }
 
 #cardUser {
   text-align: center;
   background-color: rgb(74, 74, 77);
   
+}
+.pos-f-t{
+  z-index: 1000000000000000000000000000000000000000000000000000000000;
 }
