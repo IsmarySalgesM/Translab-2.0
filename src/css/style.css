@@ -111,6 +111,6 @@ body {
   background-color: rgb(74, 74, 77);
   
 }
-.pos-f-t{
-  z-index: 1000000000000000000000000000000000000000000000000000000000;
+.menu_content {
+  z-index: 10000000;
 }
