@@ -79,7 +79,8 @@ btnTarifa.addEventListener("click", () => {
   let secondInputCard = document.getElementById("secondInput").value;
   let inSelect = document.getElementById("selectVerSaldo").value;
   fetch(
-    `http://bip-servicio.herokuapp.com/api/v1/solicitudes.json?bip=${secondInputCard || inSelect }`
+    `http://bip-servicio.herokuapp.com/api/v1/solicitudes.json?bip=${secondInputCard ||
+      inSelect}`
   )
     .then(response => response.json())
     .then(data => {
@@ -92,8 +93,16 @@ btnTarifa.addEventListener("click", () => {
       console.error("ERROR > " + error.stack);
     });
   const renderInfo = data => {
-  containerSaldo.innerHTML = `<h1> Saldo Total</h1>` + data.saldoTarjeta;
-};
-  })
+    containerSaldo.innerHTML = `
+    <div class="card" style="width: 18rem;">
+  <div class="card-header">
+  <h4> Saldo Total</h4>
+  </div>
+  <div class="card" style="width: 18rem;">
+  <div class="card-header">
+   ${data.saldoTarjeta}
+  </div>`;
+  };
+});
 
-
+   
