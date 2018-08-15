@@ -94,15 +94,16 @@ btnTarifa.addEventListener("click", () => {
     });
   const renderInfo = data => {
     containerSaldo.innerHTML = `
-    <div class="card" style="width: 18rem;">
+  <div>  
+  <div class="card">
   <div class="card-header">
   <h4> Saldo Total</h4>
   </div>
-  <div class="card" style="width: 18rem;">
+  <div class="card">
   <div class="card-header">
    ${data.saldoTarjeta}
-  </div>`;
+  </div>
+  </div>`
+  ;
   };
 });
-
-   

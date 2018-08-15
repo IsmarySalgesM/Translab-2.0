@@ -18,10 +18,11 @@ btnNum.addEventListener("click", () => {
   saveContactTarj(infoTarjeta);
   inNumCard.value = "";
   let createTarjNum = document.getElementById("createTarj");
-  let cardNum = document.createElement("h1");
+  let cardNum = document.createElement("div");
   createTarjNum.appendChild(cardNum);
-  cardNum.innerHTML = Object.values(infoTarjeta);
+  cardNum.innerHTML = `
+  <div class="card >
+  <div class="card-header">
+   ${Object.values(infoTarjeta)}
+  </div>`;
 });
-
-
-

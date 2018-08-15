@@ -99,11 +99,17 @@ body {
 }
 
 
-
 #photoUser {
   background-color: rgb(221, 142, 14);
   padding: 45%;
   text-align: center;
+}
+h4{
+  color: black;
+}
+
+#prueba{
+  background: url("https://www.google.cl/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwjbgtXPx-_cAhUEQpAKHc4ZBUIQjRx6BAgBEAU&url=https%3A%2F%2Fwww.prensalibre.com%2Ftecnologia%2Fahora-la-foto-de-perfil-de-facebook-tendra-fecha-de-caducidad&psig=AOvVaw2lGa584-V_Xpy0Szi4ibG2&ust=1534439738501578")
 }
 
 #cardUser {

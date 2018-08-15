@@ -1,11 +1,11 @@
 let selectOptionsCard = document.getElementById("tarifaHorario");
 selectOptionsCard.addEventListener("change", function() {
   let selectedZonaIf = selectOptionsCard[selectOptionsCard.selectedIndex].value;
-  valorTarifa.innerHTML = ` <div class="card" style="width: 18rem;">
+  valorTarifa.innerHTML = ` <div class="card">
   <div class="card-header">
   <h4> Valor Tarifa</h4>
   </div>
-  <div class="card" style="width: 18rem;">
+  <div class="card">
   <div class="card-header">
    ${selectedZonaIf}
   </div>`;
@@ -32,11 +32,11 @@ function renderCard(dataTarifa) {
   const finalBip = parseInt(bipCard[0] + bipCard[1]);
   const selected = document.getElementById("tarifaHorario").value;
   const bipTotal = finalBip - selected
-  let valueBip = document.getElementById("priceBip").innerHTML = ` <div class="card" style="width: 18rem;">
+  let valueBip = document.getElementById("priceBip").innerHTML = ` <div class="card">
   <div class="card-header">
   <h4> Saldo Total </h4>
   </div>
-  <div class="card" style="width: 18rem;">
+  <div class="card">
   <div class="card-header">
    ${bipTotal}
   </div>`
