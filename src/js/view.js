@@ -6,7 +6,6 @@ function showBalance() {
   document.getElementById("fourView").style.display = "none";
   document.getElementById("fiveView").style.display = "none";
   document.getElementById("sixView").style.display = "block";
-
   closeMenu();
 }
 

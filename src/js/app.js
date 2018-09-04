@@ -1,11 +1,3 @@
-// AQUI VA FUNCIONES
-
-// modeles es puro datos // json api
-
-// controlador  los procesan y lanza a las vistas botones cambio pantalla
-
-// wiew
-
 firebase.auth().onAuthStateChanged(user => {
   if (user) {
     let emailUser = user.email;
@@ -33,7 +25,7 @@ function starIn() {
     .then(() => {
       console.log("Usuario creado");
     })
-    .catch(function(error) {
+    .catch(function (error) {
       // Handle Errors here.
       var errorCode = error.code;
       var errorMessage = error.message;
@@ -51,7 +43,7 @@ function saveContactTarj(infoTarjeta) {
     .then(() => {
       alert("Se ha agregado su tarjeta bip con exito");
     })
-    .catch(function(error) {
+    .catch(function (error) {
       // Handle Errors here.
       var errorCode = error.code;
       var errorMessage = error.message;
@@ -80,7 +72,7 @@ btnTarifa.addEventListener("click", () => {
   let inSelect = document.getElementById("selectVerSaldo").value;
   fetch(
     `http://bip-servicio.herokuapp.com/api/v1/solicitudes.json?bip=${secondInputCard ||
-      inSelect}`
+    inSelect}`
   )
     .then(response => response.json())
     .then(data => {
@@ -97,13 +89,13 @@ btnTarifa.addEventListener("click", () => {
   <div>  
   <div class="card">
   <div class="card-header">
-  <h4> Saldo Total</h4>
+  <h6> Saldo Total</h6>
   </div>
   <div class="card">
   <div class="card-header">
    ${data.saldoTarjeta}
   </div>
   </div>`
-  ;
+      ;
   };
 });

@@ -6,11 +6,6 @@ let containerSaldo = document.getElementById("containerBip");
 let restSaldo = document.getElementById("inputDescont");
 
 btnNum.addEventListener("click", () => {
-  // if (typeof inNumCard == "string") {
-  //  alert("Por favor, introducir solo numeros");
-  //} else {
-  //  return;
-  // }
   let infoTarjeta = {
     cardBip: inNumCard.value
   };

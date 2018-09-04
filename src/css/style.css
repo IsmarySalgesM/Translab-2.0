@@ -15,7 +15,9 @@
 .menu_open {
   left: 0;
 }
-
+.menu{
+  z-index: 10000000;
+}
 .close_button {
   /* configurando boton de cierre del navbar*/
   font-size: xx-large;
@@ -40,6 +42,12 @@
   }
 }
 
+.navbar-brand{
+position: relative;
+right: 50%;
+text-align: center;
+}
+
 .firstSection {
   background-color: rgb(26, 24, 24);
 }
@@ -60,10 +68,6 @@ h1 {
 }
 
 .colorCorreo {
-  color: white;
-}
-
-.labelTarifa {
   color: white;
 }
 
@@ -97,19 +101,20 @@ body {
   padding: 2%;
   font-weight: bold;
 }
-
-
-#photoUser {
+#tittleAnswer,h1{
   background-color: rgb(221, 142, 14);
-  padding: 45%;
+  color: white;
+  padding: 5%;
+  text-align: center;
+}
+
+#photoUser,{
+  background-color: rgb(221, 142, 14);
+  padding: 5%;
   text-align: center;
 }
 h4{
   color: black;
-}
-
-#prueba{
-  background: url("https://www.google.cl/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwjbgtXPx-_cAhUEQpAKHc4ZBUIQjRx6BAgBEAU&url=https%3A%2F%2Fwww.prensalibre.com%2Ftecnologia%2Fahora-la-foto-de-perfil-de-facebook-tendra-fecha-de-caducidad&psig=AOvVaw2lGa584-V_Xpy0Szi4ibG2&ust=1534439738501578")
 }
 
 #cardUser {
@@ -119,4 +124,26 @@ h4{
 }
 .menu_content {
   z-index: 10000000;
+}
+
+.inputCalcular{
+  margin-top:  15%;
+}
+
+#calConTarifa,#saldoCalcular,#selectVerSaldo,#createTarj,#valorTarifa,#priceBip{
+  margin-top: 10%;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+#valorTarifa,#priceBip{
+  margin-top: 5%;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+} 
+
+.labelCard{
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+.fa-money-bill-alt,.fa-calculator,.fa-user,.fa-question,.fa-home{
+  color:   rgb(221, 142, 14);
 }

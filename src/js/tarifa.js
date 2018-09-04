@@ -34,7 +34,7 @@ function renderCard(dataTarifa) {
   const bipTotal = finalBip - selected
   let valueBip = document.getElementById("priceBip").innerHTML = ` <div class="card">
   <div class="card-header">
-  <h4> Saldo Total </h4>
+  <h6> Saldo Total </h6>
   </div>
   <div class="card">
   <div class="card-header">
