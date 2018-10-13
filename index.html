@@ -6,12 +6,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>TransLab</title>
+  <!-- Icons Page-->
   <link href='./assets/imagen.png' rel='shortcut icon' type='image/png' />
+  <!-- Font Google -->
   <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet">
+  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
     crossorigin="anonymous">
+    <!-- Bootstrap -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
     crossorigin="anonymous">
+    <!-- Ccs -->
   <link rel="stylesheet" href="src/css/style.css">
 </head>
 
@@ -42,8 +47,8 @@
       </div>
     </div>
   </section>
-    <!--  Navbar-->
-    <div class="pos-f-t">
+  <!--  Navbar-->
+  <div class="pos-f-t">
 
       <nav class="navbar navbar-dark" style="background-color:#a73737;">
         <button onclick="toggleMenu()" class="navbar-toggler" type="button" aria-controls="navbarToggleExternalContent"
@@ -66,12 +71,11 @@
         </div>
       </nav>
     </div>
-    <!-- Section Button  -->
-    <section class="secondPart" id="secondView">
+  <!-- Section Button  -->
+  <section class="secondPart" id="secondView">
     <div class="container-fluid">
       <div class="row">
-          <div class="col-md-6 offset-md-3">
-          <!-- Botones -->
+        <div class="col-md-6 offset-md-3">
           <div class="text-center">
             <button type="button" onclick="showPrice()" class="btn1 ">VER SALDO</button>
           </div>
@@ -89,54 +93,43 @@
     </div>
   </section>
 
-  <!-- Seccion Perfil -->
+  <!-- Seccion Profile-->
   <section class="threeSection" id="threeView">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-sm">
-        </div>
-        <div class="col-sm">
+        <div class="col-md-6 offset-md-3 text-center">
+          <!-- Profile Picture-->
           <div id="photoUser">
             <img src="./assets/generic-user-purple.png" alt="">
           </div>
           <div id="cardUser">
             <div class="card">
-              <div class="card-body labelCard" id="printUser">
+              <div class="card-body " id="printUser">
               </div>
             </div>
           </div>
-          <!-- Numero de tarjeta -->
+          <!--Card number -->
           <div class="input-group input-group-sm mb-3">
-            <div class="input-group-prepend">
-              <span class="input-group-text labelCard" id="inputGroup-sizing-sm">Número de Tarjeta</span>
-            </div>
-            <input type="text" class="form-control" id="textNum" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
-          </div>
-          <button type="button" class="btn btn-warning labelCard" id="btnNum">Agregar Tarjeta</button>
-          <!--  -->
-          <!-- Agregar tarjetas -->
-          <div id="createTarj" class="labelCard">
+
+            <span class="input-group-text cardColor" id="inputGroup-sizing-sm">Número de Tarjeta</span>
+            <input type="text" class="form-control " id="textNum" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
 
           </div>
-          <!--  -->
-        </div>
-        <div class="col-sm">
+          <button type="button" class="btn cardColor" id="btnNum">Agregar Tarjeta</button>
+          <!-- Card Add-->
+          <div id="createTarj"></div>
         </div>
       </div>
     </div>
   </section>
-  <!-- Seccion Preguntas -->
+  <!-- Question Section -->
   <section class="fourSection" id="fourView">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-sm">
-        </div>
-        <div class="col-sm">
-          <!-- Collapse preguntas -->
+        <div class="col-md-6 offset-md-3">
+          <!-- Question Collapse-->
           <div id="tittleAnswer">
-            <h1>
-              PREGUNTAS FRECUENTES
-            </h1>
+            <h1>PREGUNTAS FRECUENTES</h1>
           </div>
           <div class="accordion" id="accordionExample">
             <div class="card">
@@ -174,7 +167,6 @@
                 </div>
               </div>
             </div>
-
             <div class="card">
               <div class="card-header" id="headingTwo">
                 <h5 class="mb-0">
@@ -192,17 +184,12 @@
             </div>
           </div>
         </div>
-        <!-- Termino collapse -->
-        <div class="col-sm ">
-        </div>
   </section>
-  <!-- Seccion Ver Saldo en pantalla-->
+  <!-- Section of see balance on screen-->
   <section class="fiveSection " id="fiveView">
     <div class="container-fluid ">
       <div class="row">
-        <div class="col-sm ">
-        </div>
-        <div class="col-sm ">
+        <div class="col-md-6 offset-md-3">
           <div class="input-group input-group-sm mb-3 inputCalcular">
             <div class="input-group-prepend ">
               <span class="input-group-text labelCard" id="inputGroup-sizing-sm labelCard">Numero de Tarjetas</span>
@@ -218,24 +205,17 @@
               </select>
             </div>
           </div>
-          <button type="button" id="saldoCalcular" class="btn btn-warning labelCard">Ver Saldo</button>
-          <div id="containerBip">
-
-          </div>
-        </div>
-
-        <div class="col-sm ">
+          <button type="button" id="saldoCalcular" class="btn  labelCard">Ver Saldo</button>
+          <div id="containerBip"></div>
         </div>
       </div>
     </div>
   </section>
-  <!-- Seccion Calcular saldo -->
-  <section class="sixSection " id="sixView">
+  <!-- Section Calculate Balance -->
+  <section class="sixSection" id="sixView">
     <div class="container-fluid ">
-      <div class="row ">
-        <div class="col-sm ">
-        </div>
-        <div class="col-sm ">
+      <div class="row">
+        <div class="col-md-6 offset-md-3">
           <div class="input-group input-group-sm mb-3 inputCalcular">
             <div class="input-group-prepend">
               <span class="input-group-text labelCard" id="inputGroup-sizing-sm labelCard">Numero de Tarjeta</span>
@@ -262,16 +242,8 @@
             </div>
           </div>
           <button type="button" id="calConTarifa" class="btn btn-warning">Calcular</button>
-          <div id="valorTarifa" class="labelCard">
-
-          </div>
-
-          <div id="priceBip" class="labelCard">
-
-          </div>
-
-        </div>
-        <div class="col-sm ">
+          <div id="valorTarifa" class="labelCard"></div>
+          <div id="priceBip" class="labelCard"></div>
         </div>
       </div>
     </div>
@@ -292,12 +264,14 @@
     firebase.initializeApp(config);
   </script>
 
+<!-- Boostrap -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous "></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js " integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
     crossorigin="anonymous "></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js " integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
     crossorigin="anonymous "></script>
+    <!-- JS -->
   <script src="./src/js/openmenu.js"></script>
   <script src="./src/js/main.js"></script>
   <script src="./src/js/app.js"></script>
@@ -305,5 +279,4 @@
   <script src="./src/js/view.js"></script>
   <script src="./src/js/tarifa.js"></script>
 </body>
-
 </html>

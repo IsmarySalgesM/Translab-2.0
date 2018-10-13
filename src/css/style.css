@@ -42,12 +42,6 @@
   }
 }
 
-.navbar-brand{
-position: relative;
-right: 50%;
-text-align: center;
-}
-
 .firstSection {
   background-color: rgb(26, 24, 24);
 }
@@ -69,12 +63,9 @@ text-align: center;
   text-align: center;
 }
 
-.col-sm {
-  text-align: center;
-}
 
 body {
-  background-color: rgb(187, 183, 183);
+  background-color: rgb(189, 184, 184);
 }
 
 /* Firt View */
@@ -126,9 +117,8 @@ body {
 .btn1,.btn2,.btn3,.btn4 {
   width: 80%;
   height: 100%;
-  text-align: center;
   margin: 5%;
- background: #a73737;
+ background: #7a2828;
   border: 0;
   font-size: 100%;
   color: white;
@@ -141,8 +131,9 @@ body {
   text-align: center;
 }
 
-#photoUser,{
-  background-color: rgb(221, 142, 14);
+#photoUser{
+  background-color: #7a2828;
+  margin-top: 5%;
   padding: 5%;
   text-align: center;
 }
@@ -167,16 +158,14 @@ h4{
   margin-top: 10%;
   font-family: 'M PLUS Rounded 1c', sans-serif;
 }
-
+.cardColor{
+  background-color: #7a2828;
+  color: white;
+}
 #valorTarifa,#priceBip{
   margin-top: 5%;
   font-family: 'M PLUS Rounded 1c', sans-serif;
 } 
-
-.labelCard{
-  font-family: 'M PLUS Rounded 1c', sans-serif;
-}
-
 .fa-money-bill-alt,.fa-calculator,.fa-user,.fa-question,.fa-home{
   color:   rgb(221, 142, 14);
 }
