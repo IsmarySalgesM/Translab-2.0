@@ -16,87 +16,79 @@
 </head>
 
 <body>
-  <section class="firstSection" id="firstView">
+  <!-- Section email y password -->
+  <section class="firstSection  " id="firstView">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-sm">
-        </div>
-        <div class="col-sm">
-          <img class="imagenLogo" src="assets/imagen.png" alt="LOGO DE TRANS-LAB">
-          <div>
-            <h1>TRANS-LAB</h1>
+        <div class="col-md-6 offset-md-3">
+          <div class="center-align">
+            <img class="imagenLogo rounded mx-auto d-block" src="assets/imagen.png" alt="LOGO DE TRANS-LAB">
+            <h1 class="slide-in-fwd-center">TRANS-LAB</h1>
           </div>
-          <label class="colorCorreo" for="exampleInputEmail">
-            <i class="far fa-envelope"> </i> Correo Electronico</label>
-          <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Enter email">
-          <div class="form-group">
-            <label class="colorCorreo" for=" exampleInputPassword">
+          <div class="form-group text-center">
+            <label class="colorCorreo ">
+              <i class="far fa-envelope"> </i> Correo Electronico</label>
+            <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Enter email">
+
+            <label class="colorCorreo text-center">
               <i class="fas fa-key"></i> Contraseña</label>
             <input type="password" class="form-control" id="inputPassword" placeholder="Password">
           </div>
-          <div class="form-group form-check"></div>
-          <button type="button" onclick="starIn()" class="btn btn-primary">Entrar</button>
-        </div>
-        <div class="col-sm">
+
+          <div class="text-center">
+            <button type="button" onclick="starIn()" class="btn btn-primary">Entrar</button>
+          </div>
         </div>
       </div>
     </div>
   </section>
-  <!-- Seccion botones -->
+    <!--  Navbar-->
+    <div class="pos-f-t">
 
-  <!--  Navbar-->
-  <div class="pos-f-t">
+      <nav class="navbar navbar-dark" style="background-color:#a73737;">
+        <button onclick="toggleMenu()" class="navbar-toggler" type="button" aria-controls="navbarToggleExternalContent"
+          aria-expanded="false" aria-label="Toggle navigation">
+        </button>
+        <a class="navbar-brand">TRANS-LAB</a>
+      </nav>
 
-    <nav class="navbar navbar-dark" style="background-color: rgb(3, 12, 11);">
-      <button onclick="toggleMenu()" class="navbar-toggler" type="button" aria-controls="navbarToggleExternalContent" aria-expanded="false"
-        aria-label="Toggle navigation">
-      </button>
-      <a class="navbar-brand" href="#">TRANS-LAB</a>
-
-    </nav>
-
-    <nav id="sideMenu" class="nav flex-column float-left menu  menu_closed " style="background-color: #FCFCFC;">
-      <div onclick="toggleMenu()" class="close_button text-secondary">
-        <span aria-hidden="true">&times;</span>
-      </div>
-      <div class="menu_content">
-        <a class="nav-link labelCard" onclick="showPrice()"><i class="fas fa-money-bill-alt"></i> Ver saldo</a>
-        <a class="nav-link labelCard" onclick="showBalance()"><i class="fas fa-calculator"></i> Calcular tarifa</a>
-        <a class="nav-link labelCard" onclick="showProfile()"><i class="fas fa-user"></i> Perfil</a>
-        <a class="nav-link labelCard" onclick="showQuestions()"><i class="fas fa-question"></i> Preguntas frecuentes</a>
-        <a class="nav-link labelCard" onclick="showHome()"><i class="fas fa-home"></i> Home</a>
-        <a class="nav-link" onclick="logOut()">Cerrar sesión</a>
-      </div>
-    </nav>
-  </div>
-  <!-- botones ver perfil, calcular, preguntas frecuentes -->
-  <section class="secondPart" id="secondView">
+      <nav id="sideMenu" class="nav flex-column float-left menu  menu_closed " style="background-color: #FCFCFC;">
+        <div onclick="toggleMenu()" class="close_button text-secondary">
+          <span aria-hidden="true">&times;</span>
+        </div>
+        <div class="menu_content">
+          <a class="nav-link labelCard" onclick="showPrice()"><i class="fas fa-money-bill-alt"></i> Ver saldo</a>
+          <a class="nav-link labelCard" onclick="showBalance()"><i class="fas fa-calculator"></i> Calcular tarifa</a>
+          <a class="nav-link labelCard" onclick="showProfile()"><i class="fas fa-user"></i> Perfil</a>
+          <a class="nav-link labelCard" onclick="showQuestions()"><i class="fas fa-question"></i> Preguntas frecuentes</a>
+          <a class="nav-link labelCard" onclick="showHome()"><i class="fas fa-home"></i> Home</a>
+          <a class="nav-link" onclick="logOut()">Cerrar sesión</a>
+        </div>
+      </nav>
+    </div>
+    <!-- Section Button  -->
+    <section class="secondPart" id="secondView">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-sm">
-        </div>
-        <div class="col-sm">
+          <div class="col-md-6 offset-md-3">
           <!-- Botones -->
-          <div>
-            <!--icono aca-->
-            <button type="button" onclick="showPrice()" class="btn1  text-center">VER SALDO</button>
+          <div class="text-center">
+            <button type="button" onclick="showPrice()" class="btn1 ">VER SALDO</button>
           </div>
-          <div>
-            <button type="button" onclick="showBalance()" class="btn2 text-center">CALCULAR TARIFA</button>
+          <div class="text-center">
+            <button type="button" onclick="showBalance()" class="btn2">CALCULAR TARIFA</button>
           </div>
-          <div>
-            <button type="button" onclick="showProfile()" class="btn3  text-center">PERFIL</button>
+          <div class="text-center">
+            <button type="button" onclick="showProfile()" class="btn3">PERFIL</button>
           </div>
-          <div>
-            <button type="button" onclick="showQuestions()" class="btn4  text-center">PREGUNTAS FRECUENTES</button>
+          <div class="text-center">
+            <button type="button" onclick="showQuestions()" class="btn4">PREGUNTAS FRECUENTES</button>
           </div>
-        </div>
-        <!-- Finish Botones -->
-        <div class="col-sm">
         </div>
       </div>
     </div>
   </section>
+
   <!-- Seccion Perfil -->
   <section class="threeSection" id="threeView">
     <div class="container-fluid">
@@ -150,14 +142,16 @@
             <div class="card">
               <div class="card-header" id="headingOne">
                 <h5 class="mb-0">
-                  <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">
                     Cuidados de tarjeta bip!
                   </button>
                 </h5>
               </div>
               <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
                 <div class="card-body">
-                  Los cuidados de tu tarjeta son simples. Sólo debes evitar exponerla al calor, doblarla o quebrarla. Te recomendamos tenerla
+                  Los cuidados de tu tarjeta son simples. Sólo debes evitar exponerla al calor, doblarla o quebrarla.
+                  Te recomendamos tenerla
                   en un tarjetero plástico para aumentar su vida útil.
                 </div>
               </div>
@@ -166,14 +160,16 @@
             <div class="card">
               <div class="card-header" id="headingTwo">
                 <h5 class="mb-0">
-                  <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo"
+                    aria-expanded="false" aria-controls="collapseTwo">
                     Centro bip!
                   </button>
                 </h5>
               </div>
               <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
                 <div class="card-body">
-                  Son oficinas donde puedes comprar, cargar y consultar el saldo de tu bip!, además de activar cargas remotas. La mayoría de
+                  Son oficinas donde puedes comprar, cargar y consultar el saldo de tu bip!, además de activar cargas
+                  remotas. La mayoría de
                   los Centro bip! son locales compartidos con servicios de atención de Servipag y ServiEstado.
                 </div>
               </div>
@@ -182,7 +178,8 @@
             <div class="card">
               <div class="card-header" id="headingTwo">
                 <h5 class="mb-0">
-                  <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo"
+                    aria-expanded="false" aria-controls="collapseTwo">
                     ¿Puedo deshacer una compra remota?
                   </button>
                 </h5>

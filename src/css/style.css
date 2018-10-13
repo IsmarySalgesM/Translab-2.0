@@ -53,12 +53,9 @@ text-align: center;
 }
 
 .imagenLogo {
-  height: 35%;
-  padding: 10%;
-}
-
-h1 {
-  color: rgb(214, 150, 13);
+  height: 25%;
+  width: 25%;
+  align-items: center;
 }
 
 .labelCorreo {
@@ -69,6 +66,7 @@ h1 {
 
 .colorCorreo {
   color: white;
+  text-align: center;
 }
 
 .col-sm {
@@ -79,9 +77,45 @@ body {
   background-color: rgb(187, 183, 183);
 }
 
+/* Firt View */
 .firstSection{
-  background-color: black;
+  width: 100vw;
+  height: 100vh;
+  background: #a73737;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #7a2828, #a73737);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #7a2828, #a73737); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
+
+.slide-in-fwd-center {
+	-webkit-animation: slide-in-fwd-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-fwd-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+@-webkit-keyframes slide-in-fwd-center {
+  0% {
+    -webkit-transform: translateZ(-1400px);
+            transform: translateZ(-1400px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-fwd-center {
+  0% {
+    -webkit-transform: translateZ(-1400px);
+            transform: translateZ(-1400px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    opacity: 1;
+  }
+}
+
+/*  */
 .secondPart,.threeSection,.fourSection,.fiveSection,.sixSection {
   display: none;
 }
@@ -94,7 +128,7 @@ body {
   height: 100%;
   text-align: center;
   margin: 5%;
-  background-color: rgb(202, 150, 7);
+ background: #a73737;
   border: 0;
   font-size: 100%;
   color: white;
@@ -102,7 +136,6 @@ body {
   font-weight: bold;
 }
 #tittleAnswer,h1{
-  background-color: rgb(221, 142, 14);
   color: white;
   padding: 5%;
   text-align: center;
