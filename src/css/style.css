@@ -1,4 +1,11 @@
 /* Menu */
+body{
+  background-color: #eee7e7;
+}
+
+.labelCard{
+  margin-top: 5%;
+}
 .menu {
   position: absolute;
   top: 0;
@@ -7,6 +14,9 @@
   width: 90vw;
   /* viewport width 90% del an*/
   transition: 0.5s ease-out;
+}
+#menuNav{
+  display: none;
 }
 
 .menu_closed {
@@ -33,8 +43,8 @@
   padding: 10px;
   margin-top: 20px;
 }
-.fa-money-bill-alt,.fa-calculator,.fa-user,.fa-question,.fa-home{
-  color:   rgb(221, 142, 14);
+.fa-money-bill-alt,.fa-calculator,.fa-user,.fa-question,.fa-home,.fa-door-closed{
+  color:  #7a2828;
 }
 
 @media (min-width: 768px) {
@@ -56,6 +66,7 @@
 }
 
 .imagenLogo {
+  margin-top: 20%;
   height: 25%;
   width: 25%;
   align-items: center;
@@ -104,14 +115,17 @@
 /* View Display none */
 .secondPart,.threeSection,.fourSection,.fiveSection,.sixSection {
   display: none;
+  margin-top: 5%;
+  
 }
+
 
 /* Home*/
 .btn1,.btn2,.btn3,.btn4 {
   width: 80%;
   height: 100%;
   margin: 5%;
- background: #7a2828;
+  background: #ecb70a;
   border: 0;
   font-size: 100%;
   color: white;

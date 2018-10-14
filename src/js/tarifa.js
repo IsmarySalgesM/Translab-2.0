@@ -3,12 +3,9 @@ selectOptionsCard.addEventListener("change", function() {
   let selectedZonaIf = selectOptionsCard[selectOptionsCard.selectedIndex].value;
   valorTarifa.innerHTML = ` <div class="card">
   <div class="card-header">
-  <h4> Valor Tarifa</h4>
+  <h3> Valor Tarifa :  ${selectedZonaIf}</h3>
   </div>
-  <div class="card">
-  <div class="card-header">
-   ${selectedZonaIf}
-  </div>`;
+`;
 });
 
 calConTarifa.addEventListener("click", () => {
@@ -32,14 +29,9 @@ function renderCard(dataTarifa) {
   const finalBip = parseInt(bipCard[0] + bipCard[1]);
   const selected = document.getElementById("tarifaHorario").value;
   const bipTotal = finalBip - selected
-  let valueBip = document.getElementById("priceBip").innerHTML = ` <div class="card">
+  priceBip.innerHTML = ` <div class="card">
   <div class="card-header">
-  <h6> Saldo Total </h6>
-  </div>
-  <div class="card">
-  <div class="card-header">
-   ${bipTotal}
+  <h3> Saldo Total:   ${bipTotal}</h3>
   </div>`
 
-  console.log(finalTotal);
 }

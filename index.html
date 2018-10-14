@@ -48,13 +48,14 @@
     </div>
   </section>
   <!--  Navbar-->
-  <div class="pos-f-t">
 
-      <nav class="navbar navbar-dark" style="background-color:#a73737;">
-        <button onclick="toggleMenu()" class="navbar-toggler" type="button" aria-controls="navbarToggleExternalContent"
+  <header id="menuNav">
+  <div class="pos-f-t">
+      <nav class="navbar navbar-dark " style="background-color:#a73737;">
+        <button onclick="toggleMenu()" class="navbar-toggler" type="button" style="background-color:#FCFCFC;" aria-controls="navbarToggleExternalContent"
           aria-expanded="false" aria-label="Toggle navigation">
         </button>
-        <a class="navbar-brand">TRANS-LAB</a>
+        <span class="navbar-brand mb-0 h1">Navbar</span>
       </nav>
 
       <nav id="sideMenu" class="nav flex-column float-left menu  menu_closed " style="background-color: #FCFCFC;">
@@ -67,10 +68,12 @@
           <a class="nav-link labelCard" onclick="showProfile()"><i class="fas fa-user"></i> Perfil</a>
           <a class="nav-link labelCard" onclick="showQuestions()"><i class="fas fa-question"></i> Preguntas frecuentes</a>
           <a class="nav-link labelCard" onclick="showHome()"><i class="fas fa-home"></i> Home</a>
-          <a class="nav-link" onclick="logOut()">Cerrar sesión</a>
+          <a class="nav-link" onclick="logOut()"><i class="fas fa-door-closed"></i>Cerrar sesión</a>
         </div>
       </nav>
     </div>
+  </header> 
+
   <!-- Section Button  -->
   <section class="secondPart" id="secondView">
     <div class="container-fluid">
@@ -104,7 +107,7 @@
           </div>
           <div id="cardUser">
             <div class="card">
-              <div class="card-body " id="printUser">
+              <div class="card-body labelCard" id="printUser">
               </div>
             </div>
           </div>
@@ -117,7 +120,7 @@
           </div>
           <button type="button" class="btn cardColor" id="btnNum">Agregar Tarjeta</button>
           <!-- Card Add-->
-          <div id="createTarj"></div>
+          <div id="createTarj" class="labelCard"></div>
         </div>
       </div>
     </div>
@@ -206,7 +209,7 @@
             </div>
           </div>
           <button type="button" id="saldoCalcular" class="btn  labelCard">Ver Saldo</button>
-          <div id="containerBip"></div>
+          <div id="containerBip"  class="labelCard"></div>
         </div>
       </div>
     </div>
@@ -218,9 +221,9 @@
         <div class="col-md-6 offset-md-3">
           <div class="input-group input-group-sm mb-3 inputCalcular">
             <div class="input-group-prepend">
-              <span class="input-group-text labelCard" id="inputGroup-sizing-sm labelCard">Numero de Tarjeta</span>
+              <span class="input-group-text " id="inputGroup-sizing-sm labelCard">Numero de Tarjeta</span>
             </div>
-            <input type="text" class="form-control" id="cardBipNum" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+            <input type="text" class="form-control " id="cardBipNum" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
           </div>
           <div>
             <label class="labelCard">Tarjetas</label>
@@ -241,7 +244,9 @@
               </select>
             </div>
           </div>
-          <button type="button" id="calConTarifa" class="btn btn-warning">Calcular</button>
+          <div class="text-center">
+          <button type="button" id="calConTarifa" class="btn">Calcular</button>
+          </div>
           <div id="valorTarifa" class="labelCard"></div>
           <div id="priceBip" class="labelCard"></div>
         </div>

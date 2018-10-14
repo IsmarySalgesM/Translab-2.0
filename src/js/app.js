@@ -89,13 +89,19 @@ btnTarifa.addEventListener("click", () => {
   <div>  
   <div class="card">
   <div class="card-header">
-  <h6> Saldo Total</h6>
-  </div>
-  <div class="card">
-  <div class="card-header">
-   ${data.saldoTarjeta}
-  </div>
+  <h6> Saldo Total : ${data.saldoTarjeta} </h6>
   </div>`
       ;
   };
 });
+
+// Log Out
+
+function logOut() {
+  firebase.auth().signOut()
+    .then(() => {
+      console.log("Ha cerrado sesión");
+    })
+    .catch();
+}
+
