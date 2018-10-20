@@ -1,8 +1,14 @@
 /* Menu */
 body{
   background-color: #eee7e7;
+  font-family: 'Niramit', sans-serif;
 }
-
+h1{
+color: #fcfafa;  
+padding: 5%;
+text-align: center;
+font-family: 'Niramit', sans-serif;
+}
 .labelCard{
   margin-top: 5%;
 }
@@ -125,23 +131,34 @@ body{
   width: 80%;
   height: 100%;
   margin: 5%;
-  background: #ecb70a;
+  background: #eca40aef;
   border: 0;
   font-size: 100%;
   color: white;
   padding: 2%;
   font-weight: bold;
 }
-/* Question */
-#tittleAnswer,h1{
+.btnLogin{
+  background: #eca40aef;
+  border: 0;
+  font-size: 100%;
   color: white;
+  width: 20%;
+}
+.btnYellow{
+  background: #eca40aef;
+  color: rgb(15, 15, 15);
+}
+/* Question */
+.tittleAnswer{
+  color: rgb(10, 1, 1);
   padding: 5%;
   text-align: center;
 }
 
 /* Profile */
 #photoUser{
-  background-color: #7a2828;
+  background-color: #eca40aef;
   margin-top: 5%;
   padding: 5%;
   text-align: center;
@@ -150,10 +167,6 @@ body{
   text-align: center;
   background-color: rgb(74, 74, 77);
   
-}
-.cardColor{
-  background-color: #7a2828;
-  color: white;
 }
 /* Section of see balance on screen */
 .inputCalcular{

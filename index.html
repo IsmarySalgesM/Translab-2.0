@@ -9,7 +9,7 @@
   <!-- Icons Page-->
   <link href='./assets/imagen.png' rel='shortcut icon' type='image/png' />
   <!-- Font Google -->
-  <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Niramit" rel="stylesheet">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
     crossorigin="anonymous">
@@ -41,7 +41,7 @@
           </div>
 
           <div class="text-center">
-            <button type="button" onclick="starIn()" class="btn btn-primary">Entrar</button>
+            <button type="button" onclick="starIn()" class="btnLogin">Entrar</button>
           </div>
         </div>
       </div>
@@ -55,7 +55,7 @@
         <button onclick="toggleMenu()" class="navbar-toggler" type="button" style="background-color:#FCFCFC;" aria-controls="navbarToggleExternalContent"
           aria-expanded="false" aria-label="Toggle navigation">
         </button>
-        <span class="navbar-brand mb-0 h1">TransLab</span>
+        <span class="navbar-brand mb-0 h1 ">TransLab</span>
       </nav>
 
       <nav id="sideMenu" class="nav flex-column float-left menu  menu_closed " style="background-color: #FCFCFC;">
@@ -114,11 +114,11 @@
           <!--Card number -->
           <div class="input-group input-group-sm mb-3">
 
-            <span class="input-group-text cardColor" id="inputGroup-sizing-sm">Número de Tarjeta</span>
+            <span class="input-group-text  btnYellow" id="inputGroup-sizing-sm">Número de Tarjeta</span>
             <input type="text" class="form-control " id="textNum" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
 
           </div>
-          <button type="button" class="btn cardColor" id="btnNum">Agregar Tarjeta</button>
+          <button type="button" class="btn  btnYellow" id="btnNum">Agregar Tarjeta</button>
           <!-- Card Add-->
           <div id="createTarj" class="labelCard"></div>
         </div>
@@ -131,14 +131,14 @@
       <div class="row">
         <div class="col-md-6 offset-md-3">
           <!-- Question Collapse-->
-          <div id="tittleAnswer">
-            <h1>PREGUNTAS FRECUENTES</h1>
+          <div>
+            <h1 class="tittleAnswer">PREGUNTAS FRECUENTES</h1>
           </div>
           <div class="accordion" id="accordionExample">
             <div class="card">
               <div class="card-header" id="headingOne">
                 <h5 class="mb-0">
-                  <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseOne"
+                  <button class="btn btnYellow collapsed" type="button" data-toggle="collapse" data-target="#collapseOne"
                     aria-expanded="true" aria-controls="collapseOne">
                     Cuidados de tarjeta bip!
                   </button>
@@ -156,7 +156,7 @@
             <div class="card">
               <div class="card-header" id="headingTwo">
                 <h5 class="mb-0">
-                  <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo"
+                  <button class="btn btnYellow collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo"
                     aria-expanded="false" aria-controls="collapseTwo">
                     Centro bip!
                   </button>
@@ -173,7 +173,7 @@
             <div class="card">
               <div class="card-header" id="headingTwo">
                 <h5 class="mb-0">
-                  <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo"
+                  <button class="btn btnYellow collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo"
                     aria-expanded="false" aria-controls="collapseTwo">
                     ¿Puedo deshacer una compra remota?
                   </button>
@@ -193,11 +193,11 @@
     <div class="container-fluid ">
       <div class="row">
         <div class="col-md-6 offset-md-3">
-          <div class="input-group input-group-sm mb-3 inputCalcular">
+          <div class="input-group input-group-sm mb-3  inputCalcular">
             <div class="input-group-prepend ">
-              <span class="input-group-text labelCard" id="inputGroup-sizing-sm labelCard">Numero de Tarjetas</span>
+              <span class="input-group-text btnYellow" id="inputGroup-sizing-sm">Numero de Tarjetas</span>
             </div>
-            <input type="text" class="form-control" id="secondInput" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+            <input type="text" class="form-control " id="secondInput" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
           </div>
           <div>
             <div class="input-group mb-3">
@@ -208,7 +208,7 @@
               </select>
             </div>
           </div>
-          <button type="button" id="saldoCalcular" class="btn  labelCard">Ver Saldo</button>
+          <button type="button" id="saldoCalcular" class="btn btnYellow labelCard">Ver Saldo</button>
           <div id="containerBip"  class="labelCard"></div>
         </div>
       </div>
@@ -221,12 +221,12 @@
         <div class="col-md-6 offset-md-3">
           <div class="input-group input-group-sm mb-3 inputCalcular">
             <div class="input-group-prepend">
-              <span class="input-group-text " id="inputGroup-sizing-sm labelCard">Numero de Tarjeta</span>
+              <span class="input-group-text btnYellow" id="inputGroup-sizing-sm labelCard">Numero de Tarjeta</span>
             </div>
             <input type="text" class="form-control " id="cardBipNum" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
           </div>
           <div>
-            <label class="labelCard">Tarjetas</label>
+            <label class="labelCard ">Tarjetas</label>
             <div class="input-group mb-3 ">
               <select class="custom-select labelCard" id="inputDescont">
                 <option selected>Tarjetas</option>
@@ -245,7 +245,7 @@
             </div>
           </div>
           <div class="text-center">
-          <button type="button" id="calConTarifa" class="btn">Calcular</button>
+          <button type="button" id="calConTarifa" class="btn btnYellow">Calcular</button>
           </div>
           <div id="valorTarifa" class="labelCard"></div>
           <div id="priceBip" class="labelCard"></div>
