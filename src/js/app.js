@@ -1,3 +1,7 @@
+let email = document.getElementById("inputEmail").value;
+let password = document.getElementById("inputPassword").value;
+
+
 firebase.auth().onAuthStateChanged(user => {
   if (user) {
     let emailUser = user.email;
@@ -15,8 +19,8 @@ firebase.auth().onAuthStateChanged(user => {
 
 // Hace loggin el usuario
 function starIn() {
-  let email = document.getElementById("inputEmail").value;
-  let password = document.getElementById("inputPassword").value;
+  email.value;
+  password.value;
   console.log(email);
 
   firebase
@@ -30,7 +34,7 @@ function starIn() {
       var errorCode = error.code;
       var errorMessage = error.message;
       // ...
-      console.log(errorCode);
+      alert("Por favor, coloque correctos sus datos")
       console.log(errorMessage);
     });
 }
@@ -97,10 +101,18 @@ btnTarifa.addEventListener("click", () => {
 
 // Log Out
 function logOut() {
+  email.value = " ";
+  password.value=" ";
   firebase.auth().signOut()
     .then(() => {
       console.log("Ha cerrado sesión");
     })
-    .catch();
+    .catch(function (error) {
+      // Handle Errors here.
+      var errorCode = error.code;
+      var errorMessage = error.message;
+      //
+      console.log(errorCode);
+    });
 }
 
