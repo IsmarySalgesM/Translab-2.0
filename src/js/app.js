@@ -96,7 +96,6 @@ btnTarifa.addEventListener("click", () => {
 });
 
 // Log Out
-
 function logOut() {
   firebase.auth().signOut()
     .then(() => {
